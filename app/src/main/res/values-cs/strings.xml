@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="action_settings">Nastavení</string>
+	<string name="action_previous">Předchodzí</string>
+	<string name="action_next">Další</string>
+	<string name="action_finish">Konec</string>
+	<string name="navigation_drawer_open">Otevřít navigační šuflík</string>
+	<string name="navigation_drawer_close">Zavřít navigační zásuvku</string>
+	<string name="desc_nav_item_icon">Ikona navigační zásuvky</string>
+	<string name="desc_video_item_icon">Náhled Videa</string>
+	<string name="torrents_help_toolbar">Tutoriál na streamování torrentu</string>
+	<string name="torrents_help_exit_message">Chcete přeskočit tenhle tutoriál?</string>
+	<string name="torrents_help_exit_yes">Ano</string>
+	<string name="torrents_help_exit_no">Ne</string>
+	<string name="no_videos_found">Nenalezena žádná videa</string>
+	<string name="progress_dialog_title">Načítání</string>
+	<string name="progress_dialog_message">Prosím čekejte ...</string>
+	<string name="nw_alert_title">Otevřít internetové streamování</string>
+	<string name="nw_alert_message">Prosím vložte sem URL videa, příklad: http://www.example.com/video.mp4</string>
+	<string name="nw_alert_ok">OK</string>
+	<string name="nw_alert_cancel">Zrušit</string>
+	<string name="share_chooser">Zdílet přes</string>
+	<string name="share_title">YK Player - Stáhněte nyní!</string>
+
+	<string-array name="nav_drawer_items">
+		<item>Videa</item>
+		<item>Internetový stream</item>
+		<item>Streamování Torrentu</item>
+		<item>Živě TV</item>
+		<item>Sdílet</item>
+	</string-array>
+
+	<string-array name="torrents_help_items">
+		<item>(1/7) Překopíruj link tvého .torrent souboru</item>
+		<item>(2/7) Přilep link jak je vidět tady</item>
+		<item>(3/7) Přilepte sem jen link .torrentu. Nepřilepujte sem MAGNET LINK torrentu!</item>
+		<item>(4/7) Stlačte "Jdi" a počkejte dokud soubory budou nalezeny.</item>
+		<item>(5/7) Klikněte na "stahovací ikonu" vedle videa</item>
+		<item>(6/7) Video se začne načítavat.</item>
+		<item>(7/7) Seber popcorn a užij jsi video!</item>
+	</string-array>
+
+</resources>

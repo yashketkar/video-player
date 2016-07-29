@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.yashketkar.ykplayer.TorrentsHelpActivity">
+
+    <!-- Adds an item to the list. -->
+    <item android:id="@+id/action_previous"
+        android:title="@string/action_previous"
+        app:showAsAction="ifRoom|withText" />
+</menu>

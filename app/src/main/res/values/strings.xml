@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="desc_nav_item_icon">Navigation Drawer Item Icon</string>
+    <string name="desc_video_item_icon">Video Thumbnail</string>
+    <string name="torrents_help_toolbar">Torrent Streaming Tutorial</string>
+    <string name="torrents_help_exit_message">Do you want to skip this tutorial?</string>
+    <string name="torrents_help_exit_yes">Yes</string>
+    <string name="torrents_help_exit_no">No</string>
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="progress_dialog_title">Loading</string>
+    <string name="progress_dialog_message">Please Wait …</string>
+    <string name="nw_alert_title">Open Network Stream</string>
+    <string name="nw_alert_message">Please enter a network URL, For eg:\nhttp://www.example.com/video.mp4</string>
+    <string name="nw_alert_ok">OK</string>
+    <string name="nw_alert_cancel">Cancel</string>
+    <string name="share_chooser">Share Via</string>
+    <string name="share_title">YK Player - Download Now!</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Videos</item>
+        <item>Network Stream</item>
+        <item>Torrent Stream</item>
+        <item>Live TV</item>
+        <item>Share</item>
+    </string-array>
+
+    <string-array name="torrents_help_items">
+        <item>(1/7) Copy the link to your .torrent file</item>
+        <item>(2/7) Paste the link as shown below</item>
+        <item>(3/7) Make sure that it\'s a .torrent file. Do NOT paste the magnet link here!</item>
+        <item>(4/7) Press \'Go!\' and wait till the files get cached.</item>
+        <item>(5/7) Click on the download icon next to the video</item>
+        <item>(6/7) The video should then start loading</item>
+        <item>(7/7) Grab some popcorn and enjoy your video!</item>
+    </string-array>
+
+    <string name="app_name" translatable="false">YK Player</string>
+    <string name="title_activity_main" translatable="false">Main Activity</string>
+    <string name="title_activity_video_player" translatable="false">Video Player Activity</string>
+    <string name="title_activity_torrents_help" translatable="false">Torrents Help Activity</string>
+    <string name="share_message" translatable="false">http://tiny.cc/YKPlayerPro</string>
+    <string name="version_link" translatable="false">http://heroic-command-719.appspot.com/version.json</string>
+    <string name="channels_link" translatable="false">http://heroic-command-719.appspot.com/channels.json</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-2265268935639337/6674990207</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-2265268935639337/5198257009</string>
+    <string name="app_tracking_id" translatable="false">UA-51239695-4</string>
+    <string name="preference_file_key" translatable="false">com.yashketkar.ykplayer.USER_PREFERENCES</string>
+    <string name="videos_screen" translatable="false">VideosScreen</string>
+    <string name="torrents_screen" translatable="false">TorrentsScreen</string>
+    <string name="live_tv_screen" translatable="false">LiveTVScreen</string>
+    <string name="ad_screen" translatable="false">AdScreen</string>
+    <string name="main_screen" translatable="false">MainScreen</string>
+    <string name="video_player_screen" translatable="false">VideoPlayerScreen</string>
+    <string name="torrents_help_screen" translatable="false">TorrentsHelpScreen</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_video_collection_grey600_48dp</item>
+        <item>@drawable/ic_cloud_grey600_48dp</item>
+        <item>@drawable/ic_torrent_grey600_48dp</item>
+        <item>@drawable/ic_tv_grey600_48dp</item>
+        <item>@drawable/ic_share_grey600_48dp</item>
+    </array>
+
+    <array name="torrents_help_icons">
+        <item>@drawable/torrents_help_1</item>
+        <item>@drawable/torrents_help_2</item>
+        <item>@drawable/torrents_help_3</item>
+        <item>@drawable/torrents_help_4</item>
+        <item>@drawable/torrents_help_5</item>
+        <item>@drawable/torrents_help_6</item>
+        <item>@drawable/torrents_help_7</item>
+    </array>
+
+</resources>

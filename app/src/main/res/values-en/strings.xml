@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="desc_nav_item_icon">Navigation Drawer Item Icon</string>
+    <string name="desc_video_item_icon">Video Thumbnail</string>
+    <string name="torrents_help_toolbar">Torrent Streaming Tutorial</string>
+    <string name="torrents_help_exit_message">Do you want to skip this tutorial?</string>
+    <string name="torrents_help_exit_yes">Yes</string>
+    <string name="torrents_help_exit_no">No</string>
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="progress_dialog_title">Loading</string>
+    <string name="progress_dialog_message">Please Wait …</string>
+    <string name="nw_alert_title">Open Network Stream</string>
+    <string name="nw_alert_message">Please enter a network URL, For eg:\nhttp://www.example.com/video.mp4</string>
+    <string name="nw_alert_ok">OK</string>
+    <string name="nw_alert_cancel">Cancel</string>
+    <string name="share_chooser">Share Via</string>
+    <string name="share_title">YK Player - Download Now!</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Videos</item>
+        <item>Network Stream</item>
+        <item>Torrent Stream</item>
+        <item>Live TV</item>
+        <item>Share</item>
+    </string-array>
+
+    <string-array name="torrents_help_items">
+        <item>(1/7) Copy the link to your .torrent file</item>
+        <item>(2/7) Paste the link as shown below</item>
+        <item>(3/7) Make sure that it\'s a .torrent file. Do NOT paste the magnet link here!</item>
+        <item>(4/7) Press \'Go!\' and wait till the files get cached.</item>
+        <item>(5/7) Click on the download icon next to the video</item>
+        <item>(6/7) The video should then start loading</item>
+        <item>(7/7) Grab some popcorn and enjoy your video!</item>
+    </string-array>
+
+</resources>

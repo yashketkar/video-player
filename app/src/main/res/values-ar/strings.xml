@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_previous">السابق</string>
+    <string name="action_next">التالي</string>
+    <string name="action_finish">إنهاء</string>
+    <string name="navigation_drawer_open">إفتح صندوق المتصفح</string>
+    <string name="navigation_drawer_close">أغلق صندوق المتصفح</string>
+    <string name="desc_nav_item_icon">أيقونة عناصر صندوق المتصفح</string>
+    <string name="desc_video_item_icon">صور مصغرة للفيديو</string>
+    <string name="torrents_help_toolbar">البرنامج التعليمي للتورنت</string>
+    <string name="torrents_help_exit_message">هل تود تخطي عذا البرنامج التعليمي؟</string>
+    <string name="torrents_help_exit_yes">نعم</string>
+    <string name="torrents_help_exit_no">لا</string>
+    <string name="no_videos_found">لم يتم إيجاد أي فيديو</string>
+    <string name="progress_dialog_title">تحميل</string>
+    <string name="progress_dialog_message">... الرجاء الإنتظار</string>
+    <string name="nw_alert_title">افتح الشبكة</string>
+    <string name="nw_alert_message">من فضل ادخل عنوانا للشبكة، مثلا:\nhttp://www.example.com/video.mp4</string>
+    <string name="nw_alert_ok">موافق</string>
+    <string name="nw_alert_cancel">إلغاء</string>
+    <string name="share_chooser">شارك عبر</string>
+    <string name="share_title">مشغل YK - حمله الآن!</string>
+
+    <string-array name="nav_drawer_items">
+        <item>الفيديوهات</item>
+        <item>عرض الشبكة</item>
+        <item>أحداث التورنت</item>
+        <item>تلفاز مباشر</item>
+        <item>مشاركة</item>
+    </string-array>
+
+    <string-array name="torrents_help_items">
+        <item>(1/7) انسخ الرابط إلى ملف التورنت</item>
+        <item>(2/7) الصق اللينك كما هو موضح بالأسفل</item>
+        <item>(3/7) تأكد من أنه ملف تورنت، لا تقم بوضع روابط لملفات عادية هنا</item>
+        <item>(4/7) اضغط ذهاب وانتظر قليلا حتى يتم حفظ الملف</item>
+        <item>(5/7)  اضغط على ايقونة التحميل المجاورة للفيديو</item>
+        <item>(6/7) يجب أن يبدأ الفيديو في التحميل</item>
+        <item>(7/7)  احضر بعض الفشارواستمتع بالفيديو!</item>
+    </string-array>
+
+</resources>

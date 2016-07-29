@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="play_blue">#039be5</color>
+    <color name="play_red">#ed3b3b</color>
+    <color name="play_green">#4e802b</color>
+    <color name="play_blue_dark">#0277bd</color>
+    <color name="play_red_dark">#d23f31</color>
+    <color name="play_green_dark">#446f26</color>
+</resources>

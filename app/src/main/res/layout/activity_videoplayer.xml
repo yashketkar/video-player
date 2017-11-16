@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YKPlayerActivity">
+    tools:context=".VideoPlayerActivity">
+
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -13,12 +14,5 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center|center_horizontal" />
-
-        <fragment
-            android:id="@+id/adFragment"
-            android:name="com.yashketkar.ykplayer.AdFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
     </FrameLayout>
 </RelativeLayout>

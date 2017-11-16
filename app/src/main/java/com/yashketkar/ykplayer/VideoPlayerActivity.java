@@ -5,21 +5,16 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-
-import io.vov.vitamio.LibsChecker;
 import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
-
-public class VideoPlayerActivity extends ActionBarActivity {
+public class VideoPlayerActivity extends AppCompatActivity {
 
     String httpLiveUrl;
     VideoView videoView;
@@ -28,17 +23,6 @@ public class VideoPlayerActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Get tracker.
-        Tracker t = ((AppController) VideoPlayerActivity.this.getApplication()).getTracker(
-                AppController.TrackerName.APP_TRACKER);
-        // Set screen name.
-        t.setScreenName(getString(R.string.video_player_screen));
-        // Send a screen view.
-        t.send(new HitBuilders.AppViewBuilder().build());
-
-        if (!LibsChecker.checkVitamioLibs(this))
-            return;
 
         hideUI();
 

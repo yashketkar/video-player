@@ -21,16 +21,15 @@
     <string name="nw_alert_ok">OK</string>
     <string name="nw_alert_cancel">Cancel</string>
     <string name="share_chooser">Share Via</string>
-    <string name="share_title">YK Player - Download Now!</string>
+    <string name="share_title">Video Player - Download Now!</string>
 
-    <!-- Nav Drawer Menu Items -->
-    <string-array name="nav_drawer_items">
-        <item>Videos</item>
-        <item>Network Stream</item>
-        <item>Torrent Stream</item>
-        <item>Live TV</item>
-        <item>Share</item>
-    </string-array>
+    <string name="nav_local_videos">Local Videos</string>
+    <string name="nav_network_stream">Network Stream</string>
+    <string name="nav_torrent_stream">Torrent Stream</string>
+    <string name="nav_live_tv">Live TV</string>
+    <string name="nav_contact">Contact</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_visit_website">Visit Website</string>
 
     <string-array name="torrents_help_items">
         <item>(1/7) Copy the link to your .torrent file</item>

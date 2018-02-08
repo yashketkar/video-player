@@ -1,23 +1,17 @@
 package com.yashketkar.ykplayer;
 
-import android.app.Activity;
-import android.app.ActivityManager;
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,8 +23,6 @@ import com.google.android.gms.analytics.Tracker;
  */
 
 public class TorrentsFragment extends Fragment {
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_SECTION_NUMBER = "section_number";
     private ProgressBar tProgressBar;
     private WebView tWebView;
     private OnFragmentInteractionListener mListener;
@@ -42,11 +34,8 @@ public class TorrentsFragment extends Fragment {
      * @return A new instance of fragment YTFragment.
      */
 
-    public static TorrentsFragment newInstance(int sectionNumber) {
+    public static TorrentsFragment newInstance() {
         TorrentsFragment fragment = new TorrentsFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -57,38 +46,11 @@ public class TorrentsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Get tracker.
-        Tracker t = ((AppController) getActivity().getApplication()).getTracker(
-                AppController.TrackerName.APP_TRACKER);
-        // Set screen name.
-        t.setScreenName(getString(R.string.torrents_screen));
-        // Send a screen view.
-        t.send(new HitBuilders.AppViewBuilder().build());
-
-        /*
-        SharedPreferences sp = PreferenceManager
-                .getDefaultSharedPreferences(getActivity());
-        sp.edit().putBoolean(PREF_USER_LEARNED_DRAWER, true).apply();
-      */
-
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        MainActivity activity = (MainActivity) getActivity();
-        activity.getToolbarRef().setBackgroundColor(getResources().getColor(R.color.play_green));
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = activity.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(activity.getResources().getColor(R.color.play_green_dark));
-            getActivity().setTaskDescription(new ActivityManager.TaskDescription(null/*activity.getmTitle().toString()*/, null, activity.getResources().getColor(R.color.play_green)));
-        }
-
         // Inflate the layout for this fragment
         View InputFragmentView = inflater.inflate(R.layout.fragment_torrents, container, false);
         tWebView = (WebView) InputFragmentView.findViewById(R.id.torrents_web_view);
@@ -135,13 +97,12 @@ public class TorrentsFragment extends Fragment {
     }
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mListener = (OnFragmentInteractionListener) activity;
-            mListener.onSectionAttached(getArguments().getInt(ARG_SECTION_NUMBER));
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
     }

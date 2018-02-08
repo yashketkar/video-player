@@ -1,28 +1,21 @@
 package com.yashketkar.ykplayer;
 
-import android.app.Activity;
-import android.app.ActivityManager;
-import android.os.Build;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,8 +31,6 @@ import java.util.List;
  */
 public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickListener {
 
-    private static final String ARG_SECTION_NUMBER = "section_number";
-
     private OnFragmentInteractionListener mListener;
 
     /**
@@ -54,16 +45,13 @@ public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickL
     private ListAdapter mAdapter;
 
     private String url;
-    private ProgressBar pDialog;
+    private ProgressBar progressBar;
     private List<TV> tvList = new ArrayList<TV>();
     private ListView listView;
     private LiveTVAdapter adapter;
 
-    public static LiveTVFragment newInstance(int sectionNumber) {
+    public static LiveTVFragment newInstance() {
         LiveTVFragment fragment = new LiveTVFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -78,15 +66,6 @@ public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickL
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-        // Get tracker.
-        Tracker t = ((AppController) getActivity().getApplication()).getTracker(
-                AppController.TrackerName.APP_TRACKER);
-        // Set screen name.
-        t.setScreenName(getString(R.string.live_tv_screen));
-        // Send a screen view.
-        t.send(new HitBuilders.AppViewBuilder().build());
-
         adapter = new LiveTVAdapter(getActivity(), tvList);
 
         mAdapter = adapter;
@@ -94,8 +73,8 @@ public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickL
         url = getResources().getString(R.string.channels_link);
 
         // Showing progress dialog before making http request
-        //pDialog.setMessage("Loading...");
-        //pDialog.show();
+        //progressBar.setMessage("Loading...");
+        //progressBar.show();
 
         // Creating volley request obj
         JsonArrayRequest movieReq = new JsonArrayRequest(url,
@@ -169,32 +148,20 @@ public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickL
     }
 
     private void hidePDialog() {
-        if (pDialog != null) {
-            pDialog.setVisibility(ProgressBar.GONE);
-            pDialog = null;
+        if (progressBar != null) {
+            progressBar.setVisibility(ProgressBar.GONE);
+            progressBar = null;
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        MainActivity activity = (MainActivity) getActivity();
-        activity.getToolbarRef().setBackgroundColor(getResources().getColor(R.color.play_red));
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = activity.getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(activity.getResources().getColor(R.color.play_red_dark));
-            getActivity().setTaskDescription(new ActivityManager.TaskDescription(null/*activity.getmTitle().toString()*/, null, activity.getResources().getColor(R.color.play_red)));
-        }
-
         View view = inflater.inflate(R.layout.fragment_livetv, container, false);
 
-        pDialog = (ProgressBar) view.findViewById(R.id.livetv_progress_bar);
+        progressBar = (ProgressBar) view.findViewById(R.id.livetv_progress_bar);
 
-        pDialog.setVisibility(ProgressBar.VISIBLE);
+        progressBar.setVisibility(ProgressBar.VISIBLE);
         // Set the adapter
         mListView = (AbsListView) view.findViewById(android.R.id.list);
         ((AdapterView<ListAdapter>) mListView).setAdapter(adapter);
@@ -206,13 +173,12 @@ public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickL
     }
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mListener = (OnFragmentInteractionListener) activity;
-            mListener.onSectionAttached(getArguments().getInt(ARG_SECTION_NUMBER));
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
     }
@@ -222,7 +188,6 @@ public class LiveTVFragment extends Fragment implements AbsListView.OnItemClickL
         super.onDetach();
         mListener = null;
     }
-
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -1,0 +1,112 @@
+[
+   {
+      "title":"ABP News (Hindi)",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_abpnews.jpg",
+      "play":"http://hindiabp-lh.akamaihd.net/i/hindiabp1new_1@192103/master.m3u8"
+   },
+   {
+      "title":"NDTV 24x7",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ndtv247.gif",
+      "play":"http://ndtv.indostan.epac.to/ndtv/247lo/live/native"
+   },
+   {
+      "title":"NDTV 24x7 2",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ndtv247.gif",
+      "play":"http://ndtv.live-s.cdn.bitgravity.com/cdn-live-b7/_definst_/ndtv/live/ndtv247live.smil/playlist.m3u8"
+   },
+   {
+      "title":"NDTV GoodTimes",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ndtvgoodtimes.png",
+      "play":"http://bglive-a.bitgravity.com/ndtv/prohi/live/native"
+   },
+   {
+      "title":"NDTV India (Hindi)",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ndtvindia.png",
+      "play":"http://ndtv.indostan.epac.to/ndtv/indlo/live/native"
+   },
+   {
+      "title":"NDTV India (Hindi) 2",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ndtvindia.png",
+      "play":"http://bglive-a.bitgravity.com/ndtv/indlo/live/native"
+   },
+   {
+      "title":"NDTV Prime",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ndtvprime.png",
+      "play":"http://bglive-a.bitgravity.com/ndtv/prolo/live/native"
+   },
+   {
+      "title":"Clubbing TV",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_clubbingtv.jpg",
+      "play":"http://46.249.213.87/iPhone/broadcast/clubbingtv-tablet.3gp.m3u8"
+   },
+   {
+      "title":"Sky TG24 (Italian)",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_skytg24.jpeg",
+      "play":"http://iphone.live.sky.it/jen2011/jen2011_Layer1.m3u8"
+   },
+   {
+      "title":"HSNTV",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_hsn.jpg",
+      "play":"rtsp://hsn.mpl.miisolutions.net:1935/hsn-live01/_definst_/mp4:420p500kB31"
+   },
+   {
+      "title":"News 12 Long Island",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12li.jpg",
+      "play":"rtmp://fs-b4e3010000000000.id.cdn.cv.net/vxedge/fs-b4e3010000000000/fs-b4e3010000000000"
+   },
+   {
+      "title":"News 12 Bronx",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12bronx.png",
+      "play":"rtmp://fs-b5e3010000000000.id.cdn.cv.net/vxedge/fs-b5e3010000000000/fs-b5e3010000000000"
+   },
+   {
+      "title":"News 12 Bronx Weather",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12bronx.png",
+      "play":"rtmp://fs-afe3010000000000.id.cdn.cv.net/vxedge/fs-afe3010000000000/fs-afe3010000000000"
+   },
+   {
+      "title":"News 12 Brooklyn",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12brooklyn.png",
+      "play":"rtmp://fs-ace3010000000000.id.cdn.cv.net/vxedge/fs-ace3010000000000/fs-ace3010000000000"
+   },
+   {
+      "title":"News 12 Brooklyn Weather",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12brooklyn.png",
+      "play":"rtmp://fs-afe3010000000000.id.cdn.cv.net/vxedge/fs-afe3010000000000/fs-afe3010000000000"
+   },
+   {
+      "title":"News 12 Connecticut Weather",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12conneticut.jpg",
+      "play":"rtmp://fs-b6e3010000000000.id.cdn.cv.net/vxedge/fs-b6e3010000000000/fs-b6e3010000000000"
+   },
+   {
+      "title":"News 12 Hudson Valley Weather",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_news12hsv.jpg",
+      "play":"rtmp://fs-b8e3010000000000.id.cdn.cv.net/vxedge/fs-b8e3010000000000/fs-b8e3010000000000"
+   },
+   {
+      "title":"Bursa Sport",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_bstv.jpg",
+      "play":"http://stream.yayindayiz.biz/Bursaspor/bursaspor/playlist.m3u8"
+   },
+   {
+      "title":"ABP Majha (Marathi)",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_abpmajha.jpg",
+      "play":"http://mediacontent-lh.akamaihd.net/i/marathiabpnew_1@188093/master.m3u8"
+   },
+   {
+      "title":"IBN 7",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ibn7.jpg",
+      "play":"http://ibn7_hls-lh.akamaihd.net/i/ibn7_hls_n_1@174951/index_3_av-b.m3u8?sd=10&rebase=on"
+   },
+   {
+      "title":"CNN IBN",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_cnnibn.png",
+      "play":"http://cnn_ibn_hls-lh.akamaihd.net/i/cnn_ibn_hls_n_1@174950/index_1_av-p.m3u8?sd=10&rebase=on"
+   },
+   {
+      "title":"IBN Lokmat (Marathi)",
+      "image":"http://heroic-command-719.appspot.com/thumbs/ic_ibnlokmat.gif",
+      "play":"http://ibn_lokmat_hls-lh.akamaihd.net/i/ibn_lokmat_hls_n_1@178974/index_1_av-p.m3u8?sd=10&rebase=on"
+   }
+]

@@ -21,16 +21,15 @@
     <string name="nw_alert_ok">ओके</string>
     <string name="nw_alert_cancel">रद्द करा</string>
     <string name="share_chooser">सामायिक करा मार्गे</string>
-    <string name="share_title">YK Player - आता डाऊनलोड करा!</string>
+    <string name="share_title">व्हिडिओ प्लेयर - आता डाऊनलोड करा!</string>
 
-    <!-- Nav Drawer Menu Items -->
-    <string-array name="nav_drawer_items">
-        <item>व्हिडिओ</item>
-        <item>नेटवर्क स्ट्रीम</item>
-        <item>टॉरेंट स्ट्रीम</item>
-        <item>लाइव्ह टीव्ही</item>
-        <item>सामायिक करा</item>
-    </string-array>
+    <string name="nav_local_videos">स्थानिक व्हिडिओ</string>
+    <string name="nav_network_stream">नेटवर्क स्ट्रीम</string>
+    <string name="nav_torrent_stream">टॉरेंट स्ट्रीम</string>
+    <string name="nav_live_tv">लाइव्ह टीव्ही</string>
+    <string name="nav_contact">संपर्क साधा</string>
+    <string name="nav_share">सामायिक करा</string>
+    <string name="nav_visit_website">वेबसाइट पहा</string>
 
     <string-array name="torrents_help_items">
         <item>(१/७) आपल्या .torrent फाइल लिंक कॉपी करा</item>

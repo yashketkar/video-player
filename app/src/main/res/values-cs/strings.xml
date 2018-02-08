@@ -21,15 +21,15 @@
 	<string name="nw_alert_ok">OK</string>
 	<string name="nw_alert_cancel">Zrušit</string>
 	<string name="share_chooser">Zdílet přes</string>
-	<string name="share_title">YK Player - Stáhněte nyní!</string>
+	<string name="share_title">Video přehrávač - Stáhněte nyní!</string>
 
-	<string-array name="nav_drawer_items">
-		<item>Videa</item>
-		<item>Internetový stream</item>
-		<item>Streamování Torrentu</item>
-		<item>Živě TV</item>
-		<item>Sdílet</item>
-	</string-array>
+	<string name="nav_local_videos">Místní Videa</string>
+	<string name="nav_network_stream">Internetový stream</string>
+	<string name="nav_torrent_stream">Streamování Torrentu</string>
+	<string name="nav_live_tv">Živě TV</string>
+	<string name="nav_contact">Kontakt</string>
+	<string name="nav_share">Sdílet</string>
+	<string name="nav_visit_website">Navštivte webové stránky</string>
 
 	<string-array name="torrents_help_items">
 		<item>(1/7) Překopíruj link tvého .torrent souboru</item>

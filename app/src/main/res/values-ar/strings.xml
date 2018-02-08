@@ -21,15 +21,15 @@
     <string name="nw_alert_ok">موافق</string>
     <string name="nw_alert_cancel">إلغاء</string>
     <string name="share_chooser">شارك عبر</string>
-    <string name="share_title">مشغل YK - حمله الآن!</string>
+    <string name="share_title">مشغل فيديو - حمل الأن!</string>
 
-    <string-array name="nav_drawer_items">
-        <item>الفيديوهات</item>
-        <item>عرض الشبكة</item>
-        <item>أحداث التورنت</item>
-        <item>تلفاز مباشر</item>
-        <item>مشاركة</item>
-    </string-array>
+    <string name="nav_local_videos">مقاطع الفيديو المحلية</string>
+    <string name="nav_network_stream">عرض الشبكة</string>
+    <string name="nav_torrent_stream">أحداث التورنت</string>
+    <string name="nav_live_tv">تلفاز مباشر</string>
+    <string name="nav_contact">اتصل</string>
+    <string name="nav_share">مشاركة</string>
+    <string name="nav_visit_website">زيارة الموقع</string>
 
     <string-array name="torrents_help_items">
         <item>(1/7) انسخ الرابط إلى ملف التورنت</item>

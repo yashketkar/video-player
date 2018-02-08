@@ -14,12 +14,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.net.URL;
-import java.util.Set;
-
 /**
  * Created by Yash Ketkar on 12/30/2014.
  */
+
 public class VideosAdapter extends CursorAdapter {
 
     private LayoutInflater mInflater;
@@ -36,28 +34,27 @@ public class VideosAdapter extends CursorAdapter {
         content.setText(cursor.getString(cursor.getColumnIndex(MediaStore.Video.VideoColumns.DISPLAY_NAME)));
 
         int id = cursor.getInt(cursor.getColumnIndex(MediaStore.Video.VideoColumns._ID));
-        SetThumbTask s= new SetThumbTask(context,thumb);
+        SetThumbTask s = new SetThumbTask(context, thumb);
         s.execute(new Integer(id));
-     }
+    }
 
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
         return mInflater.inflate(R.layout.videos_list_item, parent, false);
     }
 
-    private class SetThumbTask extends AsyncTask<Integer,String, Bitmap> {
+    private class SetThumbTask extends AsyncTask<Integer, String, Bitmap> {
 
         Context context;
         ImageView thumb;
 
-        public SetThumbTask(Context context,ImageView thumb)
-        {
-            this.context=context;
-            this.thumb=thumb;
+        public SetThumbTask(Context context, ImageView thumb) {
+            this.context = context;
+            this.thumb = thumb;
         }
 
         protected Bitmap doInBackground(Integer... ids) {
-            int id=ids[0].intValue();
+            int id = ids[0].intValue();
             ContentResolver crThumb = context.getContentResolver();
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inSampleSize = 1;

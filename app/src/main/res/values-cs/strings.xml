@@ -19,7 +19,7 @@
 	<string name="share_chooser">Zdílet přes</string>
 	<string name="share_title">Video přehrávač - Stáhněte nyní!</string>
 
-	<string name="nav_local_videos">Místní Videa</string>
+	<string name="nav_local_videos">Videa</string>
 	<string name="nav_network_stream">Internetový stream</string>
 	<string name="nav_zbigz">Streamování Zbigz</string>
 	<string name="nav_live_tv">Živě TV</string>

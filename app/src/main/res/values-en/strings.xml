@@ -19,7 +19,7 @@
     <string name="share_chooser">Share Via</string>
     <string name="share_title">Video Player - Download Now!</string>
 
-    <string name="nav_local_videos">Local Videos</string>
+    <string name="nav_local_videos">Videos</string>
     <string name="nav_network_stream">Network Stream</string>
     <string name="nav_zbigz">Zbigz Stream</string>
     <string name="nav_live_tv">Live TV</string>

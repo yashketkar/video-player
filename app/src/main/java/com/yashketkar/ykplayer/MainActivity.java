@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_share:
                 Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.share_message));
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.website_link));
                 shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.share_title));
                 startActivity(Intent.createChooser(shareIntent, getString(R.string.share_chooser)));
                 break;

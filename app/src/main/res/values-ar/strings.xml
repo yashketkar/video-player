@@ -9,10 +9,6 @@
     <string name="navigation_drawer_close">أغلق صندوق المتصفح</string>
     <string name="desc_nav_item_icon">أيقونة عناصر صندوق المتصفح</string>
     <string name="desc_video_item_icon">صور مصغرة للفيديو</string>
-    <string name="torrents_help_toolbar">البرنامج التعليمي للتورنت</string>
-    <string name="torrents_help_exit_message">هل تود تخطي عذا البرنامج التعليمي؟</string>
-    <string name="torrents_help_exit_yes">نعم</string>
-    <string name="torrents_help_exit_no">لا</string>
     <string name="no_videos_found">لم يتم إيجاد أي فيديو</string>
     <string name="progress_dialog_title">تحميل</string>
     <string name="progress_dialog_message">... الرجاء الإنتظار</string>
@@ -25,20 +21,10 @@
 
     <string name="nav_local_videos">مقاطع الفيديو المحلية</string>
     <string name="nav_network_stream">عرض الشبكة</string>
-    <string name="nav_torrent_stream">أحداث التورنت</string>
+    <string name="nav_zbigz">zbigz فيديو مباشر </string>
     <string name="nav_live_tv">تلفاز مباشر</string>
     <string name="nav_contact">اتصل</string>
     <string name="nav_share">مشاركة</string>
     <string name="nav_visit_website">زيارة الموقع</string>
-
-    <string-array name="torrents_help_items">
-        <item>(1/7) انسخ الرابط إلى ملف التورنت</item>
-        <item>(2/7) الصق اللينك كما هو موضح بالأسفل</item>
-        <item>(3/7) تأكد من أنه ملف تورنت، لا تقم بوضع روابط لملفات عادية هنا</item>
-        <item>(4/7) اضغط ذهاب وانتظر قليلا حتى يتم حفظ الملف</item>
-        <item>(5/7)  اضغط على ايقونة التحميل المجاورة للفيديو</item>
-        <item>(6/7) يجب أن يبدأ الفيديو في التحميل</item>
-        <item>(7/7)  احضر بعض الفشارواستمتع بالفيديو!</item>
-    </string-array>
 
 </resources>

@@ -1,10 +1,8 @@
 package com.yashketkar.ykplayer;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
@@ -19,13 +17,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, VideosFragment.OnFragmentInteractionListener, TorrentsFragment.OnFragmentInteractionListener, LiveTVFragment.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, VideosFragment.OnFragmentInteractionListener, ZbigzFragment.OnFragmentInteractionListener, LiveTVFragment.OnFragmentInteractionListener {
 
     /**
      * Remember the position of the selected item.
@@ -37,8 +34,6 @@ public class MainActivity extends AppCompatActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
-    private boolean mUserLearnedTorrents;
-    private static final String PREF_USER_LEARNED_TORRENT = "torrent_learned";
     public static final int MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 0;
     public static Snackbar permissionsSnackbar;
 
@@ -142,26 +137,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(STATE_SELECTED_POSITION, mCurrentSelectedPosition);
@@ -181,7 +156,7 @@ public class MainActivity extends AppCompatActivity
     public void onSectionAttached(int number) {
         String titles[] = new String[3];
         titles[0] = getString(R.string.nav_local_videos);
-        titles[1] = getString(R.string.nav_torrent_stream);
+        titles[1] = getString(R.string.nav_zbigz);
         titles[2] = getString(R.string.nav_live_tv);
         mTitle = titles[number];
     }
@@ -194,7 +169,7 @@ public class MainActivity extends AppCompatActivity
         playVideo(id);
     }
 
-    public void onTorrentsFragmentInteraction(String id) {
+    public void onZbigzFragmentInteraction(String id) {
         playVideo(id);
     }
 
@@ -222,18 +197,10 @@ public class MainActivity extends AppCompatActivity
                 mTitle = getString(R.string.nav_local_videos);
                 restoreActionBar();
                 break;
-            case R.id.nav_torrent_stream:
-                fragment = TorrentsFragment.newInstance();
+            case R.id.nav_zbigz:
+                fragment = ZbigzFragment.newInstance();
                 switchFragment(fragment);
-                SharedPreferences sp = this.getSharedPreferences(
-                        getString(R.string.preference_file_key), Context.MODE_PRIVATE);
-                mUserLearnedTorrents = sp.getBoolean(PREF_USER_LEARNED_TORRENT, false);
-                if (mUserLearnedTorrents == false) {
-                    Intent intent = new Intent(this,
-                            TorrentsHelpActivity.class);
-                    startActivity(intent);
-                }
-                mTitle = getString(R.string.nav_torrent_stream);
+                mTitle = getString(R.string.nav_zbigz);
                 restoreActionBar();
                 break;
             case R.id.nav_live_tv:

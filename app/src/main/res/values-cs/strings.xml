@@ -9,10 +9,6 @@
 	<string name="navigation_drawer_close">Zavřít navigační zásuvku</string>
 	<string name="desc_nav_item_icon">Ikona navigační zásuvky</string>
 	<string name="desc_video_item_icon">Náhled Videa</string>
-	<string name="torrents_help_toolbar">Tutoriál na streamování torrentu</string>
-	<string name="torrents_help_exit_message">Chcete přeskočit tenhle tutoriál?</string>
-	<string name="torrents_help_exit_yes">Ano</string>
-	<string name="torrents_help_exit_no">Ne</string>
 	<string name="no_videos_found">Nenalezena žádná videa</string>
 	<string name="progress_dialog_title">Načítání</string>
 	<string name="progress_dialog_message">Prosím čekejte ...</string>
@@ -25,20 +21,10 @@
 
 	<string name="nav_local_videos">Místní Videa</string>
 	<string name="nav_network_stream">Internetový stream</string>
-	<string name="nav_torrent_stream">Streamování Torrentu</string>
+	<string name="nav_zbigz">Streamování Zbigz</string>
 	<string name="nav_live_tv">Živě TV</string>
 	<string name="nav_contact">Kontakt</string>
 	<string name="nav_share">Sdílet</string>
 	<string name="nav_visit_website">Navštivte webové stránky</string>
-
-	<string-array name="torrents_help_items">
-		<item>(1/7) Překopíruj link tvého .torrent souboru</item>
-		<item>(2/7) Přilep link jak je vidět tady</item>
-		<item>(3/7) Přilepte sem jen link .torrentu. Nepřilepujte sem MAGNET LINK torrentu!</item>
-		<item>(4/7) Stlačte "Jdi" a počkejte dokud soubory budou nalezeny.</item>
-		<item>(5/7) Klikněte na "stahovací ikonu" vedle videa</item>
-		<item>(6/7) Video se začne načítavat.</item>
-		<item>(7/7) Seber popcorn a užij jsi video!</item>
-	</string-array>
 
 </resources>

@@ -19,7 +19,7 @@
     <string name="share_chooser">Share Via</string>
     <string name="share_title">Video Player - Download Now!</string>
 
-    <string name="nav_local_videos">Local Videos</string>
+    <string name="nav_local_videos">Videos</string>
     <string name="nav_network_stream">Network Stream</string>
     <string name="nav_zbigz">Zbigz Stream</string>
     <string name="nav_live_tv">Live TV</string>
@@ -31,9 +31,8 @@
     <string name="app_caption" translatable="false">Play Anything!</string>
     <string name="title_activity_main" translatable="false">Main Activity</string>
     <string name="title_activity_video_player" translatable="false">Video Player</string>
-    <string name="share_message" translatable="false">http://tiny.cc/video-player</string>
     <string name="channels_link" translatable="false">https://raw.githubusercontent.com/yashketkar/video-player/master/channels.json</string>
-    <string name="website_link" translatable="false">https://yashketkar.com/projects/video-player/</string>
+    <string name="website_link" translatable="false">http://tiny.cc/video-player</string>
     <string name="preference_file_key" translatable="false">com.yashketkar.ykplayer.USER_PREFERENCES</string>
 
 </resources>

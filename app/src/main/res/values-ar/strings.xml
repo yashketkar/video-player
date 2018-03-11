@@ -19,7 +19,7 @@
     <string name="share_chooser">شارك عبر</string>
     <string name="share_title">مشغل فيديو - حمل الأن!</string>
 
-    <string name="nav_local_videos">مقاطع الفيديو المحلية</string>
+    <string name="nav_local_videos">أشرطة فيديو</string>
     <string name="nav_network_stream">عرض الشبكة</string>
     <string name="nav_zbigz">zbigz فيديو مباشر </string>
     <string name="nav_live_tv">تلفاز مباشر</string>

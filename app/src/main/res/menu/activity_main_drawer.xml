@@ -9,9 +9,9 @@
             android:icon="@drawable/ic_video_library_black_24dp"
             android:title="@string/nav_local_videos" />
         <item
-            android:id="@+id/nav_torrent_stream"
-            android:icon="@drawable/ic_torrent_black_24dp"
-            android:title="@string/nav_torrent_stream" />
+            android:id="@+id/nav_zbigz"
+            android:icon="@drawable/ic_zbigz_black_24dp"
+            android:title="@string/nav_zbigz" />
         <item
             android:id="@+id/nav_live_tv"
             android:icon="@drawable/ic_live_tv_black_24dp"

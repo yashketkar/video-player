@@ -2,15 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yashketkar.ykplayer.TorrentsFragment">
+    tools:context="com.yashketkar.ykplayer.ZbigzFragment">
 
     <WebView
-        android:id="@+id/torrents_web_view"
+        android:id="@+id/zbigz_web_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <ProgressBar
-        android:id="@+id/torrents_progress_bar"
+        android:id="@+id/zbigz_progress_bar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

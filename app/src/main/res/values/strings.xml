@@ -9,10 +9,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="desc_nav_item_icon">Navigation Drawer Item Icon</string>
     <string name="desc_video_item_icon">Video Thumbnail</string>
-    <string name="torrents_help_toolbar">Torrent Streaming Tutorial</string>
-    <string name="torrents_help_exit_message">Do you want to skip this tutorial?</string>
-    <string name="torrents_help_exit_yes">Yes</string>
-    <string name="torrents_help_exit_no">No</string>
     <string name="no_videos_found">No Videos Found</string>
     <string name="progress_dialog_title">Loading</string>
     <string name="progress_dialog_message">Please Wait …</string>
@@ -25,39 +21,19 @@
 
     <string name="nav_local_videos">Local Videos</string>
     <string name="nav_network_stream">Network Stream</string>
-    <string name="nav_torrent_stream">Torrent Stream</string>
+    <string name="nav_zbigz">Zbigz Stream</string>
     <string name="nav_live_tv">Live TV</string>
     <string name="nav_contact">Contact</string>
     <string name="nav_share">Share</string>
     <string name="nav_visit_website">Visit Website</string>
 
-    <string-array name="torrents_help_items">
-        <item>(1/7) Copy the link to your .torrent file</item>
-        <item>(2/7) Paste the link as shown below</item>
-        <item>(3/7) Make sure that it\'s a .torrent file. Do NOT paste the magnet link here!</item>
-        <item>(4/7) Press \'Go!\' and wait till the files get cached.</item>
-        <item>(5/7) Click on the download icon next to the video</item>
-        <item>(6/7) The video should then start loading</item>
-        <item>(7/7) Grab some popcorn and enjoy your video!</item>
-    </string-array>
-
     <string name="app_name" translatable="false">Videos</string>
     <string name="app_caption" translatable="false">Play Anything!</string>
     <string name="title_activity_main" translatable="false">Main Activity</string>
     <string name="title_activity_video_player" translatable="false">Video Player</string>
-    <string name="title_activity_torrents_help" translatable="false">Torrents Help</string>
     <string name="share_message" translatable="false">http://tiny.cc/video-player</string>
     <string name="channels_link" translatable="false">https://raw.githubusercontent.com/yashketkar/video-player/master/channels.json</string>
     <string name="website_link" translatable="false">https://yashketkar.com/projects/video-player/</string>
     <string name="preference_file_key" translatable="false">com.yashketkar.ykplayer.USER_PREFERENCES</string>
 
-    <array name="torrents_help_icons">
-        <item>@drawable/torrents_help_1</item>
-        <item>@drawable/torrents_help_2</item>
-        <item>@drawable/torrents_help_3</item>
-        <item>@drawable/torrents_help_4</item>
-        <item>@drawable/torrents_help_5</item>
-        <item>@drawable/torrents_help_6</item>
-        <item>@drawable/torrents_help_7</item>
-    </array>
 </resources>

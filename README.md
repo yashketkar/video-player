@@ -3,4 +3,4 @@
 
 [![Amazon Appstore](amazon-appsstore-us-black-v2.png)](http://www.amazon.com/gp/product/B00TMXH56I/ref=mas_pm_video_player)
 
-A video player for Android, with ability to play local, network, live streaming videos and torrent streaming.
+A video player application for Android.

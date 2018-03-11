@@ -16,13 +16,13 @@ import android.widget.ProgressBar;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link TorrentsFragment.OnFragmentInteractionListener} interface
+ * {@link ZbigzFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link TorrentsFragment#newInstance} factory method to
+ * Use the {@link ZbigzFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 
-public class TorrentsFragment extends Fragment {
+public class ZbigzFragment extends Fragment {
     private ProgressBar tProgressBar;
     private WebView tWebView;
     private OnFragmentInteractionListener mListener;
@@ -34,12 +34,12 @@ public class TorrentsFragment extends Fragment {
      * @return A new instance of fragment YTFragment.
      */
 
-    public static TorrentsFragment newInstance() {
-        TorrentsFragment fragment = new TorrentsFragment();
+    public static ZbigzFragment newInstance() {
+        ZbigzFragment fragment = new ZbigzFragment();
         return fragment;
     }
 
-    public TorrentsFragment() {
+    public ZbigzFragment() {
         // Required empty public constructor
     }
 
@@ -52,9 +52,9 @@ public class TorrentsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View InputFragmentView = inflater.inflate(R.layout.fragment_torrents, container, false);
-        tWebView = (WebView) InputFragmentView.findViewById(R.id.torrents_web_view);
-        tProgressBar = (ProgressBar) InputFragmentView.findViewById(R.id.torrents_progress_bar);
+        View InputFragmentView = inflater.inflate(R.layout.fragment_zbigz, container, false);
+        tWebView = (WebView) InputFragmentView.findViewById(R.id.zbigz_web_view);
+        tProgressBar = (ProgressBar) InputFragmentView.findViewById(R.id.zbigz_progress_bar);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             tWebView.getSettings().setAllowContentAccess(true);
@@ -74,7 +74,7 @@ public class TorrentsFragment extends Fragment {
 
         tWebView.setDownloadListener(new DownloadListener() {
             public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
-                mListener.onTorrentsFragmentInteraction(url);
+                mListener.onZbigzFragmentInteraction(url);
             }
         });
 
@@ -124,7 +124,7 @@ public class TorrentsFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        public void onTorrentsFragmentInteraction(String id);
+        public void onZbigzFragmentInteraction(String id);
 
         public void onSectionAttached(int number);
     }

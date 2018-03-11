@@ -9,10 +9,6 @@
     <string name="navigation_drawer_close">नेव्हिगेशन ड्रॉवर बंद करा</string>
     <string name="desc_nav_item_icon">नेव्हिगेशन ड्रॉवर आयटम चिन्ह</string>
     <string name="desc_video_item_icon">व्हिडिओ लघुप्रतिमा</string>
-    <string name="torrents_help_toolbar">टॉरेन्ट स्ट्रीमिंग ट्यूटोरियल</string>
-    <string name="torrents_help_exit_message">हे टुटोरिअल तुम्हाला वगळायचे आहे का ?</string>
-    <string name="torrents_help_exit_yes">होय</string>
-    <string name="torrents_help_exit_no">नाही</string>
     <string name="no_videos_found">कोणतेही व्हिडिओ आढळले नाहीत</string>
     <string name="progress_dialog_title">लोड करीत आहे</string>
     <string name="progress_dialog_message">कृपया प्रतीक्षा करा &#8230;</string>
@@ -25,20 +21,10 @@
 
     <string name="nav_local_videos">स्थानिक व्हिडिओ</string>
     <string name="nav_network_stream">नेटवर्क स्ट्रीम</string>
-    <string name="nav_torrent_stream">टॉरेंट स्ट्रीम</string>
+    <string name="nav_zbigz">झीबिगझी स्ट्रीम</string>
     <string name="nav_live_tv">लाइव्ह टीव्ही</string>
     <string name="nav_contact">संपर्क साधा</string>
     <string name="nav_share">सामायिक करा</string>
     <string name="nav_visit_website">वेबसाइट पहा</string>
-
-    <string-array name="torrents_help_items">
-        <item>(१/७) आपल्या .torrent फाइल लिंक कॉपी करा</item>
-        <item>(२/७) खालीलप्रमाणे लिंक पेस्ट करा</item>
-        <item>(३/७) तो एक .torrent फाइल आहे याची खात्री करा. येथे मॅग्नेट लिंक पेस्ट करू नका!</item>
-        <item>(४/७) दाबा "जा!" फाइल कॅश येईपर्यंत थांबावे.</item>
-        <item>(५/७) व्हिडिओ पुढील डाउनलोड आयकॉनवर क्लिक करा</item>
-        <item>(6/७) व्हिडिओ नंतर लोड सुरू करावी</item>
-        <item>(६/७) काही पॉपकॉर्न पकडा आणि विडेओचा आनंद घ्या </item>
-    </string-array>
 
 </resources>
